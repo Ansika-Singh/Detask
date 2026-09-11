@@ -21,7 +21,7 @@ export default async function DashboardPage() {
     currentUser = firstUser;
   }
 
-  let userProjects = await prisma.projectMember.findMany({
+  const userProjects = await prisma.projectMember.findMany({
     where: { userId: currentUser.id },
     include: { project: true },
   });

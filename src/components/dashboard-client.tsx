@@ -293,7 +293,7 @@ export function DashboardClient({
             </div>
 
             <p className="text-xs text-gray-300">
-              Are you sure you want to delete <span className="font-semibold text-white">"{activeProject.name}"</span> and all its tasks?
+              Are you sure you want to delete <span className="font-semibold text-white">&quot;{activeProject.name}&quot;</span> and all its tasks?
             </p>
 
             <div className="flex gap-3 pt-2">

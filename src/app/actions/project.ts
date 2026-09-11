@@ -21,7 +21,7 @@ export async function createProject(workspaceId: string, name: string, descripti
   // Resolve valid workspace ID
   let targetWorkspaceId = workspaceId;
   if (!targetWorkspaceId || targetWorkspaceId === "default") {
-    let wsMember = await prisma.workspaceMember.findFirst({
+    const wsMember = await prisma.workspaceMember.findFirst({
       where: { userId: session.user.id },
       include: { workspace: true }
     });

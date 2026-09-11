@@ -5,7 +5,7 @@ import { getServerSession } from "next-auth";
 import { authOptions } from "@/lib/auth";
 import { hasPermission, ROLES, Role } from "@/lib/permissions";
 import { revalidatePath } from "next/cache";
-import bcrypt from "bcrypt";
+import bcrypt from "bcryptjs";
 
 export async function getTeamMembers() {
   const session = await getServerSession(authOptions);

@@ -26,7 +26,14 @@ yarn-debug.log*
 yarn-error.log*
 
 # local env files
+.env
 .env*.local
+
+# sqlite & temporary files
+*.db
+*.db-journal
+curl_output.txt
+fix_toast.js
 
 # vercel
 .vercel
